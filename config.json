@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5.4-mini",
+  "reasoningEffort": "none",
+  "chat": true,
+  "speech": false,
+  "useBotAccount": true,
+  "voiceAlias": "KI",
+  "maxChars": 420,
+  "maxOutputTokens": 300,
+  "cooldownSeconds": 8,
+  "timeoutSeconds": 20
+}
