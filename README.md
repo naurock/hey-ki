@@ -8,14 +8,16 @@ Speaker.bot, or both. Voice recognition is not used.
 !ki Why is the sky blue?
 ```
 
-Answers are in German by default and limited to 420 characters. Change the
-instructions in `HeyKI.cs` to use another response language.
+Answers are limited to 420 characters by default. Set `"language": "de"` for
+German (default) or `"language": "en"` for English in `config.json`.
+This applies to both chat output and the text read aloud by Speaker.bot.
 
 ## Contents
 
 - `HeyKI.cs` — C# action for Streamer.bot.
 - `config.json` — model, output, length, timeout, and cooldown settings.
-- `ANLEITUNG.md` — setup and troubleshooting guide in German.
+- [ANLEITUNG.md](ANLEITUNG.md) - setup and troubleshooting guide in German.
+- [GUIDE_EN.md](GUIDE_EN.md) - setup and troubleshooting guide in English.
 - `LICENSE` — MIT license terms.
 
 ## Setup
@@ -24,7 +26,7 @@ Requires Streamer.bot, a connected Twitch account, and an OpenAI API key with
 API billing enabled. Speaker.bot is optional; OBS is needed to include spoken
 answers in your stream. ElevenLabs is an optional speech provider.
 
-1. Follow [ANLEITUNG.md](ANLEITUNG.md) to configure the `!ki` command and action.
+1. Follow [GUIDE_EN.md](GUIDE_EN.md) or [ANLEITUNG.md](ANLEITUNG.md) to configure the `!ki` command and action.
 2. Set `aiConfigPath` to the full path of `config.json`, including the filename.
 3. Store your OpenAI key in the Windows user environment variable
    `OPENAI_API_KEY`, then restart Streamer.bot.
